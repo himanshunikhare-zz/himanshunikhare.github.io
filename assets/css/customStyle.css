@@ -1,0 +1,364 @@
+.text {
+  font-size: 22px;
+}
+
+.subtitle {
+  color: #dddddf;
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: normal;
+  font-family: "futuraheavy";
+  max-width: 920px;
+  margin: 0 auto 65px;
+}
+
+.section-title h1 {
+  margin: 0;
+  line-height: 50px;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: white;
+}
+
+.border {
+  display: block;
+  height: 10px;
+  border-radius: 100px;
+  margin: 10px 0 40px 0;
+  width: 200px;
+  background: #2c2ff6;
+}
+
+.chartrow {
+  width: 50%;
+  min-height: 1px;
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+
+.chartrow ul {
+  margin: 0 20px 0 0 !important;
+  text-align: left !important;
+  padding: 0;
+}
+
+.chartrow ul li {
+  list-style: none !important;
+}
+
+.chartrow ul li em {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.chartrow ul li div {
+  margin-bottom: 35px;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  background: #09131b;
+  height: 42px;
+  overflow: hidden;
+}
+
+.chartrow ul li div span {
+  height: 42px;
+  width: 50%;
+  display: block;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.chartrow ul li.machine-learning div span {
+  background: #e13c4c;
+  width: 90%;
+}
+
+.chartrow ul li.data-science div span {
+  background: #ffdb43;
+  width: 90%;
+}
+
+.chartrow ul li.web-dev div span {
+  background: #9d2027;
+  width: 80%;
+}
+
+.chartrow ul li.app-dev div span {
+  background: #3498db;
+  width: 75%;
+}
+
+.chartrow ul li.api-dev div span {
+  background: #2ecc71;
+  width: 60%;
+}
+
+.chartrow ul li.javascript div span {
+  background: #a94034;
+}
+
+.chartrow ul li.seo div span {
+  background: #ff8137;
+  width: 60%;
+}
+
+.chartrow ul li.unix div span {
+  width: 65%;
+  background: #0cbfb3;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+/*Basic Grid Styles*/
+.Grid {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.u-textCenter {
+  text-align: center;
+}
+
+.Grid-cell {
+  flex: 1;
+}
+
+.Demo {
+  font-size: large;
+  padding: 0.8em 1em 0;
+  margin-bottom: 1em;
+  background: rgba(46, 45, 45, 0.2);
+  transition: background-color 0.3s ease;
+  border: 1px solid #effb3b;
+  border-radius: 3px;
+  color: rgb(185, 185, 185);
+}
+
+.Demo:after {
+  content: "";
+  display: block;
+  margin-top: 0.8em;
+  height: 1px;
+}
+
+.Demo:hover {
+  background: rgba(253, 253, 253, 0.89);
+  color: #000;
+  font-weight: bolder;
+}
+
+.Demo.Holly {
+  background: rgba(102, 51, 255, 0.1);
+}
+
+.Demo.Holly:hover {
+  background: rgba(102, 51, 255, 0.25);
+}
+
+/* With gutters*/
+.Grid--gutters {
+  margin-left: -1em;
+}
+
+.edu-card {
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.966);
+  padding: 40px;
+  /* border-radius: 10px; */
+  transition: all .4s ease-in;
+  /* border: 1px solid rgb(85, 85, 78); */
+}
+
+.edu-card:hover {
+  background: rgb(0, 0, 0);
+  transform: scale(1.02);
+  color: #fff;
+  border: 1px solid rgb(248, 248, 248);
+  box-shadow: 5px 5px grey;
+
+
+}
+
+a:hover {
+  color: #dddddf;
+}
+
+.institute {
+  margin-bottom: 5px;
+  color: #ece3ad;
+}
+
+.work-card {
+  margin: 20px;
+  background: #000;
+  padding: 20px;
+  transition: all .4s ease-in;
+}
+
+.work-card:hover {
+  background: rgb(0, 0, 0);
+  transform: scale(1.02);
+  color: #fff;
+  border: 1px solid rgb(248, 248, 248);
+  box-shadow: 5px 5px grey;
+}
+
+.work-company {
+  color: #fff;
+}
+
+.work-line {
+  width: 100%;
+  color: #fff;
+  background: #fff;
+}
+
+
+
+.project-img {
+  width: 100%;
+}
+
+.img-description {
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  z-index: 2;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.52);
+}
+
+/* Card */
+
+/* Transistion both your normal and hovered elements to allow for smooth flow when unhovered */
+
+.card {
+  background: rgb(22, 22, 22);
+  margin-top: 40px;
+  height: 400px;
+  width: 100%;
+  transition: 0.6s all ease;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px rgb(0, 0, 0);
+
+}
+
+/* I used background url to allow me to change the height and width without needing extra css */
+
+.cardTop {
+  transition: 0.4s all ease;
+  height: 65%;
+  background: url("https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg") no-repeat;
+}
+
+.cardBottom {
+  height: 35%;
+  text-wrap: normal;
+  transition: 0.4s all ease;
+}
+
+.cardText {
+  min-height: 100%;
+  padding: 20px;
+  color: #000000;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(207, 207, 207);
+}
+
+.cardInfo {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(39, 39, 39);
+  color: rgb(141, 141, 141);
+}
+
+/* Hidding the entire so anything we put in will only show on hover */
+
+.cardHoverText {
+  visibility: hidden;
+  color: #333333;
+}
+
+/* Hover affects */
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.52);
+  background: rgb(187, 220, 251);
+
+}
+
+/* Using className + hover followed by child element allows you to change child elements when parent is hovered */
+.card:hover .cardTitle {
+  color: #000;
+}
+
+.card:hover .cardInfo {
+  color: rgb(42, 42, 42);
+  margin: 3px 0 5px 0;
+}
+
+.card:hover .cardHoverText {
+  visibility: visible;
+  transition: 0.4s all ease;
+  transition-delay: 0.1999s;
+}
+
+.card:hover .cardBottom {
+  transition: 0.4s all ease;
+  height: 65%;
+  opacity: 1;
+}
+
+.card:hover .cardTop {
+  height: 35%;
+  opacity: 0.8;
+  transition: 0.4s all ease;
+}

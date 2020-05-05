@@ -1,50 +1,773 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Simple Coming soon or Under construcion [flat design]</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Architects+Daughter'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dosis'>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <!-- Mirrored from droitthemes.com/html/filix/demos/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 May 2020 23:25:17 GMT -->
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<header>
-  <h1>{ We're Coming }</h1>
-  <h3>If you leave us your address we can contact you</h3>
-</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Himanshu Nikhare | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- icon CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/animated.css" />
 
-<section class="container"> 
-  <div class="wrapBox animated rollIn">
-    <div class="box">
-      <div class="thanks"><p>THANK YOU!</p></div>
-      <form action="#">
-        <div>
-          <label for="first-name">Your best email address:</label>
-          <input type="email" name="first-name" id="name" placeholder="" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/customStyle.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="95" id="top">
+    <!-- start header -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand logo" href="index-2.html"
+                ><span class="logo_text">Himanshu Nikhare</span></a
+              >
+              <div class="demo_menu ml-auto" id="demo_menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <!--
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page_builder">Page Builder</a>
+                                </li>
+-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#education">Education </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link buy_btn"
+                      href="assets/Himanshu_Nikhare .pdf"
+                      ><i class="fa fa-shopping-cart"></i>Download Resume</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
-
-        <div>
-          <button id="send" type="submit">SUBMIT <i class="fa fa-paper-plane"></i></button>
-        </div>
-      </form>
-      <div class="social">
-        <ul>
-          <li><i class="fa fa-facebook"></i></li>
-          <li><i class="fa fa-google-plus"></i></li>
-          <li><i class="fa fa-twitter"></i></li>
-          <li><i class="fa fa-youtube"></i></li>
-        </ul>
       </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start hero_warp -->
+    <section class="hero_warp">
+      <div class="container">
+        <div class="row d-flex align-items-center height_vh">
+          <div class="col-md-12 col-12">
+            <div class="banner_content">
+              <h1 class="banner_title text-center" id="heading1"></h1>
+              <h2 class="banner_subtitle text-center" id="heading2"></h2>
+
+              <!-- The script itself, loaded AFTER your root element. -->
+              <script src="https://cdn.jsdelivr.net/npm/typeit@7.X.X/dist/typeit.min.js"></script>
+              <script>
+                new TypeIt("#heading1", {
+                  strings: "Howdy, नमस्ते !",
+                }).go();
+                new TypeIt("#heading2", {
+                  strings: [
+                    "Computer Science Undergraduate",
+                    "Programmer | Developer | Learner",
+                  ],
+                }).go();
+              </script>
+              <div class="btn_group text-center">
+                <a href="#about" class="btn_glob btn_border">View More</a>
+                <!-- <a
+                  href="#"
+                  class="btn_glob btn_solid"
+                  >Buy now</a
+                > -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end hero_warp -->
+
+    <div class="height_vh dark_bg"></div>
+
+    <!-- start demo_wrap -->
+    <section class="demo_wrap bg_dark" id="about">
+      <div class="home_page_demos page_demos">
+        <div class="bg_text">
+          <h1 class="bg_strock_text" data-parallax='{"x": 200}'>About</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-12">
+              <h2 class="demos_title wow fadeInUp">About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <p class="text">
+                  A highly organized and hard-working
+                  <strong>Mobile and Web App Developer</strong> currently
+                  pursuing <strong>Bachelor in Technology</strong> in
+                  <strong>Computer Science</strong> specialization in
+                  <strong>Data Science</strong> from
+                  <strong> NIIT UNIVERSITY.</strong><br />
+                  I love exploring new and emerging technologies and thats the
+                  reason I have projects from such wide spetrum of different set
+                  of technologies. I am open for discussions in interesting
+                  topics and would love to connect with you my social media.
+                </p>
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <a href="www.linkedin.com/in/himanshu-nikhare" target="_blank">
+                  <img
+                    src="assets/images/profile.jpg"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                </a>
+                <a
+                  href="www.linkedin.com/in/himanshu-nikhare"
+                  target="_blank"
+                  class="demo_link"
+                  >Himanshu Nikhare</a
+                >
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <div class="btn_group text-center">
+                  <a
+                    href="www.linkedin.com/in/himanshu-nikhare"
+                    class="btn_glob btn_border"
+                    >Linkedin</a
+                  >
+                  <a
+                    href="www.github.com/himanshunikhare"
+                    class="btn_glob btn_border"
+                    >Github</a
+                  >
+                  <a
+                    href="https://www.facebook.com/himanshunikhare/"
+                    class="btn_glob btn_border"
+                    >Facebook</a
+                  >
+                  <a
+                    href="https://www.instagram.com/himanshunikhare/"
+                    class="btn_glob btn_border"
+                    >Instagram</a
+                  >
+                  <a
+                    href="mailto:himanshunikhare@outlook.com"
+                    class="btn_glob btn_border"
+                  >
+                    Mail ID
+                  </a>
+                  <!-- <a
+                    href="#"
+                    class="btn_glob btn_solid"
+                    >Buy now</a
+                  > -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <h2 class="subtitle wow fadeInUp text-center">
+                  Technical Skills
+                </h2>
+                <div class="section-title wow fadeInUp">
+                  <h1>Core Skills</h1>
+                  <span class="border"></span>
+                </div>
+                <!--  Machine Learning
+      Data Science
+      Web Development
+      App Development
+      API Development -->
+                <article class="chartrow">
+                  <ul>
+                    <li class="machine-learning">
+                      <em>Machine Learning</em>
+                      <div>
+                        <span class="animated fadeInLeft"></span>
+                      </div>
+                    </li>
+                    <li class="web-dev">
+                      <em>Web Development</em>
+                      <div>
+                        <span class="animated fadeInLeft"></span>
+                      </div>
+                    </li>
+                    <li class="app-dev">
+                      <em>App Development</em>
+                      <div>
+                        <span class="animated fadeInLeft"></span>
+                      </div>
+                    </li>
+                  </ul>
+                </article>
+                <article class="chartrow">
+                  <ul>
+                    <li class="data-science">
+                      <em>Data Science</em>
+                      <div>
+                        <span class="animated fadeInLeft"></span>
+                      </div>
+                    </li>
+                    <li class="api-dev">
+                      <em>API Development</em>
+                      <div>
+                        <span class="animated fadeInLeft"></span>
+                      </div>
+                    </li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <div class="section-title wow fadeInUp">
+                  <h1>Techonogies Used:</h1>
+                  <span class="border"></span>
+                </div>
+                <div class="Grid Grid--gutters u-textCenter">
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">HTML</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">CSS</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">JavaScript</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">Django</div>
+                  </div>
+                </div>
+                <div class="Grid Grid--gutters u-textCenter">
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">React</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">Flutter</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">Python</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">Java</div>
+                  </div>
+                </div>
+                <div class="Grid Grid--gutters u-textCenter">
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">C++</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">Matlab</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">R</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">VB.net</div>
+                  </div>
+                </div>
+                <div class="Grid Grid--gutters u-textCenter">
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">Postgres</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">MongoDB</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">MySQL</div>
+                  </div>
+                  <div class="Grid-cell">
+                    <div class="Demo content-1of4">Hive</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio_page_demos page_demos">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-12">
+              <h2 id="education" class="subtitle wow fadeInUp text-center">
+                Education
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <a href="https://www.niituniversity.in/" class="col-12">
+              <div class="edu-card col-12">
+                <h2 class="institute">NIIT University - BTech CSE</h2>
+                <h5 class="course">
+                  Bachelor in Technology, CSE | Specialization - Data Science
+                </h5>
+              </div>
+            </a>
+            <a href="https://vfjabalpur.kvs.ac.in/" class="col-12">
+              <div class="edu-card col-12">
+                <h2 class="institute">Kendriya Vidyalaya, VF Jabalpur</h2>
+                <h5 class="course">Higher Secondary Education</h5>
+              </div>
+            </a>
+            <a href="https://vfjabalpur.kvs.ac.in/" class="col-12">
+              <div class="edu-card col-12">
+                <h2 class="institute">Kendriya Vidyalaya, VF Jabalpur</h2>
+                <h5 class="course">Secondary Education</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="blog_page_demos page_demos">
+        <div class="bg_text">
+          <h1 class="bg_strock_text" data-parallax='{"x": 200}'>
+            Experience
+          </h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-12">
+              <h2 class="demos_title wow fadeInUp">Work Experience</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-12">
+              <h2
+                id="Internship/Training"
+                class="subtitle wow fadeInUp text-center"
+              >
+                Internship/Training
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="work-card col-12">
+              <h2 class="work-company">NIIT University</h2>
+              <hr class="work-line" />
+              <p class="text">App Developer</p>
+              <h5 class="work-title">Oct 2019 – Present</h5>
+              <p>
+                Worked as an official android app developer for NIIT University,
+                as a part of team I developed a cross-platform mobile
+                application for NU.
+              </p>
+            </div>
+            <div class="work-card col-12">
+              <h2 class="work-company">Gun Carriage Factory -</h2>
+              <hr class="work-line" />
+              <p class="text">Industrial Training</p>
+              <h5 class="work-title">May 2018 - Jun 2018</h5>
+              <p>
+                Developed a web portal for the accounts department of Gun
+                Carriage Factory, Jabalpur as a part of their Industrial
+                Training. The portal authenticates users as per their
+                designation and allows an admin user to add, remove or modify
+                employee details and non-admin can view/generate their monthly,
+                annual, semi-annual reports as per their requirements.
+              </p>
+            </div>
+            <div class="work-card col-12">
+              <h2 class="work-company">West Central Railways</h2>
+              <hr class="work-line" />
+              <p class="text">Industrial Training</p>
+              <h5 class="work-title">1 Jun 2019 - 20 Jun 2019</h5>
+              <p>
+                Got to learn about different instruments and technology used by
+                West Central Railways.
+              </p>
+            </div>
+            <div class="work-card col-12">
+              <h2 class="work-company">Machine Learning</h2>
+              <hr class="work-line" />
+              <p class="text">by Stanford University</p>
+              <h5 class="work-title">27 Apr 2020 - 20 Jul 2020</h5>
+              <p>
+                A coursera course Taught by Andrew Ng, provided with broad
+                introduction in ML, Detemining and Statistical Pattern
+                Recognition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio_page_demos page_demos">
+        <div class="bg_text">
+          <h1 id="projects" class="bg_strock_text" data-parallax='{"x": 200}'>Projects</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-12">
+              <h2 class="demos_title wow fadeInUp">Projects</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <div class="card">
+                  <div class="cardTop"></div>
+                  <div class="cardBottom">
+                    <div class="cardText">
+                      <!--       Title and description will always show -->
+                      <h3 class="cardTitle">School Medical Portal</h3>
+                      <h4 class="cardInfo">Django, React</h4>
+                      <hr />
+                      <!--       Only visibile when parent element is hovered over -->
+                      <div class="cardHoverText">
+                        Developed a web portal for a medical service provider,
+                        My Health Wellness in Neemrana. I developed different
+                        Restful APIs for each service provided by the company.
+                        The portal was able to authenticate users, where admin
+                        user can add/delete/modify entries of students check-up
+                        and school administration can monitor students analytics
+                        in a dashboard.
+                      </div>
+                      <!--       Only visibile when parent element is hovered over -->
+                    </div>
+                  </div>
+                </div>
+                <!-- <a
+                  href="http://droitthemes.com/html/filix/portfolio-3.html"
+                  target="_blank"
+                  class="demo_link"
+                  >Web Portal</a
+                > -->
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <div class="card">
+                  <div class="cardTop"></div>
+                  <div class="cardBottom">
+                    <div class="cardText">
+                      <!--       Title and description will always show -->
+                      <h3 class="cardTitle">Word Prediction System</h3>
+                      <h4 class="cardInfo">Python</h4>
+                      <hr />
+                      <!--       Only visibile when parent element is hovered over -->
+                      <div class="cardHoverText">
+                        Predicts the probability of the next word in the
+                        sequence, based on the words already observed in the
+                        sequence. The project uses Long Short-Term Memory (LSTM)
+                        recurrent neural network to learn to predict words based
+                        on their context.
+                      </div>
+                      <!--       Only visibile when parent element is hovered over -->
+                    </div>
+                  </div>
+                </div>
+                <!-- <a
+                  href="http://droitthemes.com/html/filix/portfolio-3.html"
+                  target="_blank"
+                  class="demo_link"
+                  >Word Prediction</a
+                > -->
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <div class="card">
+                  <div class="cardTop"></div>
+                  <div class="cardBottom">
+                    <div class="cardText">
+                      <!--       Title and description will always show -->
+                      <h3 class="cardTitle">Surveillance Camera</h3>
+                      <h4 class="cardInfo">Native Android</h4>
+                      <hr />
+                      <!--       Only visibile when parent element is hovered over -->
+                      <div class="cardHoverText">
+                        The project converts an old camera-enabled android
+                        smartphone into a surveillance camera. This android
+                        application records only the moments where some sort of
+                        motion is detected and still frames without any motion
+                        is truncated from the recorded video
+                      </div>
+                      <!--       Only visibile when parent element is hovered over -->
+                    </div>
+                  </div>
+                </div>
+                <!-- <a
+                  href="http://droitthemes.com/html/filix/portfolio-3.html"
+                  target="_blank"
+                  class="demo_link"
+                  >Grid - 3 columns</a
+                > -->
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <div class="card">
+                  <div class="cardTop"></div>
+                  <div class="cardBottom">
+                    <div class="cardText">
+                      <!--       Title and description will always show -->
+                      <h3 class="cardTitle">NUton Mobile App</h3>
+                      <h4 class="cardInfo">Flutter</h4>
+                      <hr />
+                      <!--       Only visibile when parent element is hovered over -->
+                      <div class="cardHoverText">
+                        Developed in flutter, the cross-platform mobile
+                        application allows students to check their timetable,
+                        mess menu, attendance and profile details. The app also
+                        allows NUtons to mark attendance in real-time using the
+                        barcode scanner provided.
+                      </div>
+                      <!--       Only visibile when parent element is hovered over -->
+                    </div>
+                  </div>
+                </div>
+                <!-- <a
+                  href="http://droitthemes.com/html/filix/portfolio-3.html"
+                  target="_blank"
+                  class="demo_link"
+                  >Grid - 3 columns</a
+                > -->
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <div class="card">
+                  <div class="cardTop"></div>
+                  <div class="cardBottom">
+                    <div class="cardText">
+                      <!--       Title and description will always show -->
+                      <h3 class="cardTitle">TEDx NIIT University</h3>
+                      <h4 class="cardInfo">HTML, CSS, JS</h4>
+                      <hr />
+                      <!--       Only visibile when parent element is hovered over -->
+                      <div class="cardHoverText">
+                        Developed a static website for TEDxNIIT University for
+                        their event in 2019 and 2020. The website ticketing
+                        portal is integrated using APIs provided from townscript
+                        and had all sort of necessary animations to make the
+                        website beautiful.
+                      </div>
+                      <!--       Only visibile when parent element is hovered over -->
+                    </div>
+                  </div>
+                </div>
+                <!-- <a
+                  href="http://droitthemes.com/html/filix/portfolio-3.html"
+                  target="_blank"
+                  class="demo_link"
+                  >Grid - 3 columns</a
+                > -->
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <div class="card">
+                  <div class="cardTop"></div>
+                  <div class="cardBottom">
+                    <div class="cardText">
+                      <!--       Title and description will always show -->
+                      <h3 class="cardTitle">
+                        Centre for Innovation Incubation and Entrepreneurship
+                      </h3>
+                      <h4 class="cardInfo">Django</h4>
+                      <hr />
+                      <!--       Only visibile when parent element is hovered over -->
+                      <div class="cardHoverText">
+                        The website allows users to signup in order to register
+                        for an event, it also helps the user to submit their
+                        startup idea in case if any entrepreneur is looking for
+                        incubation support.
+                      </div>
+                      <!--       Only visibile when parent element is hovered over -->
+                    </div>
+                  </div>
+                </div>
+                <!-- <a
+                  href="http://droitthemes.com/html/filix/portfolio-3.html"
+                  target="_blank"
+                  class="demo_link"
+                  >Grid - 3 columns</a
+                > -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="blog_page_demos page_demos">
+        <div class="bg_text">
+          <h1 class="bg_strock_text" data-parallax='{"x": 200}'>Blog</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-12">
+              <h2 class="demos_title wow fadeInUp">Blog</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <a
+                  href="http://droitthemes.com/html/filix/blog.html"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/demo/blog/blog_1.jpg"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                </a>
+                <a
+                  href="http://droitthemes.com/html/filix/blog.html"
+                  target="_blank"
+                  class="demo_link"
+                  >Blog Listing</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <a
+                  href="http://droitthemes.com/html/filix/blog-sidebar.html"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/demo/blog/blog_2.jpg"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                </a>
+                <a
+                  href="http://droitthemes.com/html/filix/blog-sidebar.html"
+                  target="_blank"
+                  class="demo_link"
+                  >Blog Listing with sidebar</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <a
+                  href="http://droitthemes.com/html/filix/blog-single.html"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/demo/blog/blog_3.jpg"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                </a>
+                <a
+                  href="http://droitthemes.com/html/filix/blog-single.html"
+                  target="_blank"
+                  class="demo_link"
+                  >Blog Single</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="demo_single_item wow fadeInUp">
+                <a
+                  href="http://droitthemes.com/html/filix/blog-single-sidebar.html"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/demo/blog/blog_4.jpg"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                </a>
+                <a
+                  href="http://droitthemes.com/html/filix/blog-single-sidebar.html"
+                  target="_blank"
+                  class="demo_link"
+                  >Blog Single with sidebar</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    
+    <!-- end demo_wrap -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-12">
+            <div id="contact" class="footer_content">
+              <!-- <div class="footer_logo text-center wow fadeInUp">
+               <a> <span class="logo_text">Thankyou for visiting</span></a>
+              </div> -->
+              <h2 class="footer_title text-center wow fadeInUp">
+                Feel free to <br> <span>Contact Me</span> 
+              </h2>
+              <div class="btn_group text-center">
+                <a
+                href="www.linkedin.com/in/himanshu-nikhare"
+                class="btn_glob btn_border"
+                >Linkedin</a
+              >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <div class="go_to_top">
+      <a href="#top">
+        <i class="fa fa-angle-up"></i>
+        <i class="fa fa-angle-up"></i>
+      </a>
     </div>
-  </div>
-</section>
 
-<footer></footer>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js"></script>
+    <script src="typeit.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
 
-</body>
+  <!-- Mirrored from droitthemes.com/html/filix/demos/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 May 2020 23:26:03 GMT -->
 </html>
