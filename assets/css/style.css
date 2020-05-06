@@ -11,14 +11,7 @@ This file contains the styling for the actual tempalte, this is the file you nee
 @Default Styles
 /*----------------------------------------------------*/
 /*Base font*/
-@import url(
-  https://fonts.googleapis.com/css?family=Poppins:300,
-  400,
-  500,
-  600,
-  700,
-  900
-);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900);
 
 .primary-color {
   color: #ffffff;
@@ -253,7 +246,7 @@ button:hover {
   transition: all 0.5s;
 }
 
-.go_to_top a i + i {
+.go_to_top a i+i {
   top: 100%;
 }
 
@@ -261,7 +254,7 @@ button:hover {
   top: -100%;
 }
 
-.go_to_top a:hover i + i {
+.go_to_top a:hover i+i {
   top: 0;
 }
 
@@ -279,11 +272,9 @@ button:hover {
   text-transform: uppercase;
   padding: 7px 40px;
   background-color: transparent;
-  background-image: -webkit-linear-gradient(
-    315deg,
-    #f6f7f6 50%,
-    transparent 50%
-  );
+  background-image: -webkit-linear-gradient(315deg,
+      #f6f7f6 50%,
+      transparent 50%);
   background-image: -o-linear-gradient(315deg, #f6f7f6 50%, transparent 50%);
   background-image: linear-gradient(135deg, #f6f7f6 50%, transparent 50%);
   background-position: -50px -50px;
@@ -307,11 +298,9 @@ button:hover {
 .btn_glob.btn_solid {
   color: #333;
   background-color: transparent;
-  background-image: -webkit-linear-gradient(
-    315deg,
-    #f6f7f6 50%,
-    transparent 50%
-  );
+  background-image: -webkit-linear-gradient(315deg,
+      #f6f7f6 50%,
+      transparent 50%);
   background-image: -o-linear-gradient(315deg, #f6f7f6 50%, transparent 50%);
   background-image: linear-gradient(135deg, #f6f7f6 50%, transparent 50%);
   background-size: 300% 300%;
@@ -328,7 +317,7 @@ button:hover {
   background-size: 0px 50px;
 }
 
-.btn_glob + .btn_glob {
+.btn_glob+.btn_glob {
   margin-left: 25px;
 }
 
@@ -497,11 +486,9 @@ header.header .demo_menu ul li.nav-item a.nav-link.buy_btn {
   text-transform: uppercase;
   padding: 7px 42px;
   background-color: transparent;
-  background-image: -webkit-linear-gradient(
-    315deg,
-    #f6f7f6 50%,
-    transparent 50%
-  );
+  background-image: -webkit-linear-gradient(315deg,
+      #f6f7f6 50%,
+      transparent 50%);
   background-image: -o-linear-gradient(315deg, #f6f7f6 50%, transparent 50%);
   background-image: linear-gradient(135deg, #f6f7f6 50%, transparent 50%);
   background-position: -50px -50px;
@@ -532,7 +519,9 @@ header.header .demo_menu ul li.nav-item a.nav-link.buy_btn:hover {
 .hero_warp {
   height: 100vh;
   width: 100%;
-  background: #000 url(../images/hero_bg.jpg) no-repeat fixed top left;
+  background: #000 url(../images/test6.webp) no-repeat fixed top left;
+  background-size: cover;
+  /* filter: blur(1px); */
   position: fixed;
   z-index: 1;
 }
@@ -607,7 +596,9 @@ header.header .demo_menu ul li.nav-item a.nav-link.buy_btn:hover {
   font-family: "futuraheavy";
   max-width: 920px;
   margin: 0 auto 65px;
+  z-index: 5;
 }
+
 .hero_warp .banner_content .banner_subtitle {
   color: #cacbce;
   font-size: 40px;
@@ -636,11 +627,11 @@ header.header .demo_menu ul li.nav-item a.nav-link.buy_btn:hover {
   font-weight: 300;
 }
 
-.hero_warp .banner_content .exp_list li + li {
+.hero_warp .banner_content .exp_list li+li {
   padding-left: 35px;
 }
 
-.hero_warp .banner_content .exp_list li + li:before {
+.hero_warp .banner_content .exp_list li+li:before {
   position: absolute;
   content: "/";
   left: 10px;
@@ -686,7 +677,7 @@ header.header .demo_menu ul li.nav-item a.nav-link.buy_btn:hover {
   padding: 1px 0;
 }
 
-.hero_warp .social_link li a i + i {
+.hero_warp .social_link li a i+i {
   top: 100%;
 }
 
@@ -694,7 +685,7 @@ header.header .demo_menu ul li.nav-item a.nav-link.buy_btn:hover {
   top: -100%;
 }
 
-.hero_warp .social_link li a:hover i + i {
+.hero_warp .social_link li a:hover i+i {
   top: 0;
 }
 
@@ -786,7 +777,7 @@ header.header .demo_menu ul li.nav-item a.nav-link.buy_btn:hover {
   font-weight: 300;
 }
 
-.hero_warp.blog_single_banner .banner_content .post_info li + li {
+.hero_warp.blog_single_banner .banner_content .post_info li+li {
   margin-left: 25px;
 }
 
